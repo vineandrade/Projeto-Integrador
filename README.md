@@ -4,5 +4,5 @@ Colaboradores
 - Dayse Oliveira
 - Henrique Kenji
 - Vinicius de Andrade
-- 
+
 Nosso objetivo é entregar um site funcional e bem estruturado para a conclusão deste projeto. Agradecemos pelo apoio e esperamos que o resultado final seja satisfatório para todos
