@@ -1,0 +1,74 @@
+body{
+    height: 100vh;
+    background-color: black;
+}
+nav.menu {
+    width: 70px;
+    height: 100%;
+    background-color:black;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 rgb(61, 155, 233);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.2s;
+}
+nav.menu:hover{
+    width: 300px;
+}
+.slide {
+    width: 100%;
+    padding-left: 20px;
+}
+.slide i {
+    color: aliceblue;
+    font-size: 25px;
+    cursor: pointer;
+}
+ul {
+    height: 100%;
+    list-style-type: none;
+    padding-left: 10px;
+}
+ul li.item-menu{
+    transition: 0.2s;
+}
+ul li.item-menu:hover{
+    background: black;
+}
+ul li.item-menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+ul li.item-menu a .txt-link{
+    margin-left: 30px;
+}
+ul li.item-menu a .icone i{
+    font-size: 20px;
+    margin-left: 10px;
+}
+img.imagemjogo {
+    margin: 40px;
+    padding-left: 400px;
+    height: 325px;
+    width: 500px;
+}
+button {
+    background-color: rgb(61, 155, 233) ;
+    text-decoration-color: black;
+    font-family: Arial, Helvetica;
+    border: 20%;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 16px;
+    border-color: blue;
+    border-radius: 20px;
+}
