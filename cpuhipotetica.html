@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            background-color: black;
+        }
+        .imagem{
+text-align: center;
+margin-top: 170px;
+max-height: 690px;
+overflow: hidden;
+  }
+    </style>
+</head>
+<body>
+    <div class="imagem">
+        <img src="Captura de tela_6-11-2024_103227_127.0.0.1.jpg" usemap="#mapa">
+        <map name="mapa">
+            <area shape="rect" coords="136,6,270,67" alt="memoria_principal"  onclick="myfunction()">
+            <area shape="rect" coords="30,256,77,281" alt="pc" onclick="myfunction()">
+            <area shape="rect" coords="29,303,77,329" alt="ri" onclick="myfunction()">
+            <area shape="rect" coords="30,351,78,377" alt="sp" onclick="myfunction()">
+            <area shape="rect" coords="64,388,112,414" alt="y" onclick="myfunction()">
+            <area shape="rect" coords="186,260,245,283" alt="r0" onclick="myfunction()">
+            <area shape="rect" coords="186,294,245,317" alt="r1" onclick="myfunction()">
+            <area shape="rect" coords="186,332,245,355" alt="r2" onclick="myfunction()">
+            <area shape="rect" coords="185,368,244,391" alt="r3" onclick="myfunction()">
+            <area shape="rect" coords="183,465,231,488" alt="z" onclick="myfunction()">
+            <area shape="rect" coords="305,308,440,376" alt="uc" onclick="myfunction()">
+            <area shape="rect" coords="545,233,638,353" alt="unidade_de_e/s" onclick="myfunction()">
+            <area shape="poly" coords="64,434,161,435,137,484,88,485" alt="ula" onclick="myfunction()">
+            <area shape="rect" coords="163,92,613,88" alt="bus_de_endereço1" onclick="myfunction()">
+            <area shape="rect" coords="617,220,613,88" alt="bus_de_endereço2" onclick="myfunction()">
+            <area shape="rect" coords="164,172,158,80" alt="bus_de_endereço3" onclick="myfunction()">
+            <area shape="poly" coords="161,183,167,172,154,172" alt="bus_de_endereço4" onclick="myfunction()">
+            <area shape="poly" coords="615,234,621,223,608,223" alt="bus_de_endereço5" onclick="myfunction()">
+            <area shape="poly" coords="161,65,168,78,154,78" alt="bus_de_endereço6" onclick="myfunction()">
+            <area shape="rect" coords="195,77,199,172" alt="bus_de_dados1" onclick="myfunction()">
+            <area shape="rect" coords="590,133,595,219" alt="bus_de_dados2" onclick="myfunction()">
+            <area shape="rect" coords="199,131,591,136" alt="bus_de_dados3" onclick="myfunction()">
+            <area shape="poly" coords="198,184,204,172,190,172" alt="bus_de_dados4" onclick="myfunction()">
+            <area shape="poly" coords="592,232,600,219,586,219" alt="bus_de_dados5" onclick="myfunction()">
+            <area shape="poly" coords="197,66,204,78,188,79" alt="bus_de_dados6" onclick="myfunction()">
+            <area shape="rect" coords="230,78,236,171" alt="bus_de_controle1" onclick="myfunction()">
+            <area shape="rect" coords="560,159,564,220" alt="bus_de_controle2" onclick="myfunction()">
+            <area shape="rect" coords="560,159,236,155" alt="bus_de_controle3" onclick="myfunction()">
+            <area shape="poly" coords="232,187,238,171,227,172" alt="bus_de_controle4" onclick="myfunction()">
+            <area shape="poly" coords="561,232,567,220,555,220" alt="bus_de_controle5" onclick="myfunction()">
+            <area shape="poly" coords="232,68,239,80,227,80" alt="bus_de_controle6" onclick="myfunction()">
+        </map>
+    </div> 
+
+    <div id="teste">
+        <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/66e83125-195e-4431-bde8-89ac425a9038-profile_image-70x70.png" style="height: 100px;width: 100px;">
+    </div>
+    
+    <script>
+        function myfunction() {
+            var x = document.getElementById("teste");
+if (x.style.display === "none") {
+x.style.display = "block";
+} else {
+x.style.display = "none";
+}
+        }
+    </script>
+</body>
+</html>
