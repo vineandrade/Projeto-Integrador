@@ -48,21 +48,66 @@ ul li.item-menu a{
 }
 ul li.item-menu a .txt-link{
     margin-left: 30px;
+    white-space: nowrap;
+    
 }
 ul li.item-menu a .icone i{
     font-size: 20px;
     margin-left: 10px;
 }
-img.imagemjogo {
+img.Img1 {
     margin: 40px;
-    padding-left: 400px;
+    padding-left: 300px;
     height: 325px;
     width: 500px;
+    border-radius: 20px;
 }
-button {
+img.Img2 {
+    margin: 40px;
+    padding-left: 200px;
+    height: 325px;
+    width: 500px;
+    border-radius: 20px;
+}
+img.Img3 {
+    margin: 40px;
+    padding-left: 700px;
+    height: 325px;
+    width: 500px;
+    border-left: 20px;
+    border-radius: 20px
+}
+button.BG1 {
     background-color: rgb(61, 155, 233) ;
     text-decoration-color: black;
     font-family: Arial, Helvetica;
+    border: 20%;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 16px;
+    border-color: blue;
+    border-radius: 20px;
+    margin-inline: 20px;
+}
+button.BG2 {
+    background-color: rgb(61, 155, 233) ;
+    text-decoration-color: black;
+    font-family: Arial, Helvetica;
+    border: 20%;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 16px;
+    border-color: blue;
+    border-radius: 20px;
+}
+button.BG3 {
+    background-color: rgb(61, 155, 233) ;
+    text-decoration-color: black;
+    font-family: Arial, Helveti ca;
     border: 20%;
     cursor: pointer;
     margin-top: 10px;
