@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projeto Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>PROJETO - Desenvolvimento de Sistema Web</h1>
+    </header>
+
+    <main>
+        <h2>Sobre o site</h2>
+        <p>O objetivo principal deste projeto de desenvolvimento web é criar um site funcional que aplique
+            os conhecimentos adquiridos durante as aulas do 2º semestre de 2024 na PUC-Campinas.
+            A proposta é utilizar as técnicas e habilidades desenvolvidas para criar uma plataforma 
+            interativa e de alta qualidade. O site tem como foco proporcionar uma experiência envolvente
+            para os usuários, ao mesmo tempo em que demonstra nossa capacidade técnica e criativa no desenvolvimento web.</p>
+
+            <p>O projeto consiste em uma plataforma de jogos online gratuitos,onde os usuários poderão acessar 
+            os jogos diretamente pelo navegador, sem necessidade de realizar downloads. A proposta é oferecer 
+            uma experiência de jogo prática e divertida, com jogos em Assembly, que podem ser jogados de forma 
+            individual. A escolha de utilizar Assembly para o desenvolvimento dos jogos não é apenas uma questão 
+            técnica, mas também um reflexo do desejo de integrar o conhecimento adquirido na disciplina de Organização 
+            de Sistemas de Computação, ministrada pelo Professor Pannain, com a matéria de Desenvolvimento de Sistemas 
+            Web, ministrada pelo Professor Matias.</p>
+
+            <p>Ao trabalhar com Assembly, estamos buscando compreender, de maneira mais profunda, a interação entre o 
+            software e o hardware, além de melhorar nossa capacidade de otimizar o desempenho dos jogos. A escolha por 
+            essa linguagem também nos permite entender como os jogos funcionam em um nível mais baixo, aprimorando nossa 
+            formação como desenvolvedores, ao mesmo tempo em que proporcionamos uma experiência única para os usuários.</p>
+
+            <p>Mesmo que o código de jogo seja escrito em Assembly, ele precisa interagir com o navegador para criar a 
+            interface do usuário, capturar entradas (como cliques ou pressionamento de teclas) e exibir gráficos. Isso 
+            normalmente seria feito através do uso de JavaScript, que pode controlar a parte visual do jogo (por exemplo, 
+            utilizando o HTML5 Canvas) e lidar com eventos de interação. Dessa forma, o JavaScript atua como intermediário, 
+            permitindo que a lógica de Assembly se conecte ao navegador e forneça uma experiência rica ao usuário.</p>
+
+        <h3>Os jogos disponíveis são:</h3>
+        <ul>
+            <li>Batalha Naval</li>
+            <li>Campo Minado</li>
+            <li>Snake Game</li>
+        </ul>
+
+        <h3>Como Jogar os Jogos:</h3>
+        <p>Para jogar os jogos, o usuário deve simplesmente acessar a plataforma através de seu navegador.
+        Não há necessidade de download ou instalação adicional. A interface do jogo será exibida diretamente 
+        na página, utilizando recursos de HTML e JavaScript para renderizar gráficos e capturar interações.</p>
+        <h4>Cada jogo possui um conjunto de instruções e controles específicos:</h4>
+        <ul>
+            <li>Batalha Naval:O jogador deve selecionar as células da grade para tentar adivinhar as posições
+            dos barcos inimigos. As teclas de direção e espaço podem ser usadas para movimentar o cursor
+            e fazer as seleções.</li>
+
+            <li>Campo Minado: O objetivo é controlar a cobrinha utilizando as setas do teclado, enquanto ela
+            coleta alimentos e cresce sem colidir com as paredes ou com seu próprio corpo.</li>
+
+            <li>Snake Game: O jogador deve descobrir as células do campo sem ativar as minas.
+            As teclas de navegação e o clique do mouse são usados para explorar as células e marcar as minas.</li>
+        </ul>
+
+        <p>Cada um desses jogos pode ser jogado de forma independente, com a interação sendo feita através do teclado 
+        e/ou mouse, dependendo do jogo. A experiência de jogo será fluida e rápida, sem a necessidade de downloads 
+        ou configurações adicionais.</p>
+
+        <h3>Tecnologias Utilizadas:</h3>
+        <ul>
+            <li>HTML:Estruturação básica das páginas.</li> 
+            <li>CSS:Design e estilo visual das páginas.</li>
+            <li>JavaScript: Intermediário de execução do Assembly, controle da interface do usuário e interação com o navegador.</li>
+            <li>Assembly Desenvolvimento dos jogos.</li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; Projeto de Desenvolvimento Web - PUC CAMPINAS </p>
+    </footer>
+
+</body>
+</html>
