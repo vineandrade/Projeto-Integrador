@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogos</title>
+    <title>Projeto Web - Plataforma Gamer</title>
+
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="principal.css">
+    <!-- Fontes do Google -->
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="jogos.css">
+    <!-- Ícones do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
+
 <body>
+
+    <!-- Botão de menu hamburguer -->
     <button class="menu-button" onclick="toggleMenu()">&#9776;</button>
 
     <!-- Menu de navegação -->
@@ -49,45 +57,19 @@
             </li>
         </ul>
     </nav>
-    <header>
-        <h1>Só um Bit</h1>
-    </header>
 
-    <div class="container">
-        <!-- Jogo Batalha Naval -->
-        <div class="game">
-            <h2>Batalha Naval</h2>
-            <div class="game-container">
-                <img src="battle.jpeg" alt="Imagem do jogo Batalha Naval" width="200" height="200">
-                <div class="game-buttons">
-                    <button onclick="iniciarBatalhaNaval()">Iniciar</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Jogo Snake -->
-        <div class="game">
-            <h2>Snake Game</h2>
-            <div class="game-container">
-                <img src="snake.jpeg" alt="Imagem do jogo Snake" width="200" height="200">
-                <div class="game-buttons">
-                    <button onclick="iniciarSnake()">Iniciar</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Jogo Pac-Man-->
-        <div class="game">
-            <h2>Pac-Man</h2>
-            <br/>
-            <br/>   
-            <div class="game-container">
-                <img src="pacman.jpg" alt="Imagem do jogo Pac-Man" width="200" height="200">
-                <div class="game-buttons">
-                    <button onclick="iniciarCampoMinado()">Iniciar</button>
-                </div>
-            </div>
-        </div>
+    <!-- Conteúdo da página -->
+    <div class="content">
+        <header>
+            <h1>Bem-vindo ao Site Só um Bit</h1>
+        </header>
+        <main>
+            <h2>Informações</h2>
+            <p>Conteúdo da página vai aqui.</p>
+        </main>
+        <footer>
+            <p>&copy; 2024 Projeto Web - PUC CAMPINAS</p>
+        </footer>
     </div>
 
     <script>
@@ -97,8 +79,7 @@
             menu.classList.toggle('open');
         }
     </script>
-    <footer>
-        <p>&copy; 2024 Projeto Web - PUC CAMPINAS</p>
-    </footer>
+
 </body>
+
 </html>

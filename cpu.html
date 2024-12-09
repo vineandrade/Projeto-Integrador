@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="cpu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <button class="menu-button" onclick="toggleMenu()">&#9776;</button>
+
+    <!-- Menu de navegação -->
+    <nav class="menu" id="menu">
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <ul>
+            <li class="item-menu">
+                <a href="sobre.html">
+                    <span class="icone"><i class="bi bi-folder"></i></span>
+                    <span class="txt-link">Sobre o Projeto</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="cpu.html">
+                    <span class="icone"><i class="bi bi-cpu"></i></span>
+                    <span class="txt-link">CPU hipotetica</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="jogos.html">
+                    <span class="icone"><i class="bi bi-joystick"></i></span>
+                    <span class="txt-link">Jogos</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="monitoria.html">
+                    <span class="icone"><i class="bi bi-person-raised-hand"></i></span>
+                    <span class="txt-link">Monitorias</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icone"><i class="bi bi-cloud-arrow-up-fill"></i></span>
+                    <span class="txt-link">Outro tema</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="imagem">
+        <img src="imagem cpu.jpg" usemap="#mapa">
+        <map name="mapa">
+            <area shape="rect" coords="136,6,270,67" alt="memoria_principal"  onclick="myfunction16()">
+            <area shape="rect" coords="30,256,77,281" alt="pc" onclick="myfunction1()">
+            <area shape="rect" coords="29,303,77,329" alt="ri" onclick="myfunction2()">
+            <area shape="rect" coords="30,351,78,377" alt="sp" onclick="myfunction3()">
+            <area shape="rect" coords="64,388,112,414" alt="y" onclick="myfunction4()">
+            <area shape="rect" coords="186,260,245,283" alt="r0" onclick="myfunction5()">
+            <area shape="rect" coords="186,294,245,317" alt="r1" onclick="myfunction6()">
+            <area shape="rect" coords="186,332,245,355" alt="r2" onclick="myfunction7()">
+            <area shape="rect" coords="185,368,244,391" alt="r3" onclick="myfunction8()">
+            <area shape="rect" coords="183,465,231,488" alt="z" onclick="myfunction9()">
+            <area shape="rect" coords="305,308,440,376" alt="uc" onclick="myfunction10()">
+            <area shape="rect" coords="545,233,638,353" alt="unidade_de_e/s" onclick="myfunction11()">
+            <area shape="poly" coords="64,434,161,435,137,484,88,485" alt="ula" onclick="myfunction12()">
+            <area shape="rect" coords="163,92,613,88" alt="bus_de_endereço1" onclick="myfunction13()">
+            <area shape="rect" coords="617,220,613,88" alt="bus_de_endereço2" onclick="myfunction13()">
+            <area shape="rect" coords="164,172,158,80" alt="bus_de_endereço3" onclick="myfunction13()">
+            <area shape="poly" coords="161,183,167,172,154,172" alt="bus_de_endereço4" onclick="myfunction13()">
+            <area shape="poly" coords="615,234,621,223,608,223" alt="bus_de_endereço5" onclick="myfunction13()">
+            <area shape="poly" coords="161,65,168,78,154,78" alt="bus_de_endereço6" onclick="myfunction13()">
+            <area shape="rect" coords="195,77,199,172" alt="bus_de_dados1" onclick="myfunction14()">
+            <area shape="rect" coords="590,133,595,219" alt="bus_de_dados2" onclick="myfunction14()">
+            <area shape="rect" coords="199,131,591,136" alt="bus_de_dados3" onclick="myfunction14()">
+            <area shape="poly" coords="198,184,204,172,190,172" alt="bus_de_dados4" onclick="myfunction14()">
+            <area shape="poly" coords="592,232,600,219,586,219" alt="bus_de_dados5" onclick="myfunction14()">
+            <area shape="poly" coords="197,66,204,78,188,79" alt="bus_de_dados6" onclick="myfunction14()">
+            <area shape="rect" coords="230,78,236,171" alt="bus_de_controle1" onclick="myfunction15()">
+            <area shape="rect" coords="560,159,564,220" alt="bus_de_controle2" onclick="myfunction15()">
+            <area shape="rect" coords="560,159,236,155" alt="bus_de_controle3" onclick="myfunction15()">
+            <area shape="poly" coords="232,187,238,171,227,172" alt="bus_de_controle4" onclick="myfunction15()">
+            <area shape="poly" coords="561,232,567,220,555,220" alt="bus_de_controle5" onclick="myfunction15()">
+            <area shape="poly" coords="232,68,239,80,227,80" alt="bus_de_controle6" onclick="myfunction15()">
+        </map>
+    </div> 
+
+    <div id="teste">
+        
+    </div>
+    <div class="container">
+        <div class="text-box top-1" id="Text 1">MP</div>
+        <div class="text-box top-2" id="Text 2">PC</div>
+        <div class="text-box top-3" id="Text 3">RI</div>
+        <div class="text-box top-4" id="Text 4">SP</div>
+        
+        <div class="text-box right-1" id="Text 5">R0</div>
+        <div class="text-box right-2" id="Text 6">R1</div>
+        <div class="text-box right-3" id="Text 7">R2</div>
+        <div class="text-box right-4" id="Text 8">R3</div>
+        
+        <div class="text-box bottom-1" id="Text 9">Y</div>
+        <div class="text-box bottom-2" id="Text 10">ULA</div>
+        <div class="text-box bottom-3" id="Text 11">UC</div>
+        <div class="text-box bottom-4" id="Text 12">E/S</div>
+        
+        <div class="text-box left-1" id="Text 13">BUS DE ENDEREÇO</div>
+        <div class="text-box left-2" id="Text 14">BUS DE CONTROLE</div>
+        <div class="text-box left-3" id="Text 15">BUS DE DADOS</div>
+        <div class="text-box left-4" id="Text 16">Z</div>
+    </div>
+    <script>
+        // Função para alternar o menu
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('open');
+        }
+    </script>
+    <footer>
+        <p>&copy; 2024 Projeto Web - PUC CAMPINAS</p>
+    </footer>
+
+    <!-- Incluindo o arquivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
