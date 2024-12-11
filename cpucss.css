@@ -44,10 +44,11 @@ margin-top: 350px;
  
 
 .text-box {
+  color: white;
   display: none;
   position: absolute;
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #3e9cea;
   border-radius: 5px;
   font-size: 24px;
   width: 1100px; 
