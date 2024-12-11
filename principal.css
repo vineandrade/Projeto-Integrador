@@ -83,7 +83,6 @@ ul li {
     border-radius: 5px;
     transition: background 0.3s ease;
 }
-
 ul li:hover {
     background-color: #3e9cea;
     color: #000;
@@ -107,18 +106,17 @@ main, header {
 }
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+.container {
+    animation: fadeIn 1s ease-out;
 }
 
-/* Estilos do menu */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
 nav.menu {
     background: #111;
     padding: 15px 0;
@@ -141,7 +139,14 @@ nav.menu.open {
     list-style: none;
     padding: 0;
 }
-
+ul li {
+    font-size: 1.3rem;
+    margin: 10px 0;
+    padding: 8px;
+    border: 2px solid #3e9cea;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
 .item-menu {
     margin: 10px 0;
 }
@@ -160,7 +165,7 @@ nav.menu.open {
 }
 
 .item-menu a:hover {
-    color: #3e9cea;
+    color: #000;
 }
 
 /* Estilos do botão de menu */
