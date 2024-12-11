@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogos</title>
+    <title>Projeto Web - Plataforma Gamer</title>
     <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="Código.css">
+    <!-- Fontes do Google -->
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="jogos.css">
+    <!-- Ícones do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Botão de menu hamburguer -->
     <button class="menu-button" onclick="toggleMenu()">&#9776;</button>
 
     <!-- Menu de navegação -->
@@ -50,45 +56,39 @@
             </li>
         </ul>
     </nav>
+
     <header>
-        <h1>Só um Bit</h1>
+        <h1>Códigos em Assembly</h1>
     </header>
 
     <div class="container">
         <!-- Jogo Batalha Naval -->
-        <div class="game">
-            <h2>Batalha Naval</h2>
-            <div class="game-container">
-                <img src="battle.jpeg" alt="Imagem do jogo Batalha Naval" width="200" height="200">
-                <div class="game-buttons">
-                    <button onclick="iniciarBatalhaNaval()">Iniciar</button>
-                </div>
-            </div>
-        </div>
+<div class="game">
+    <h2 onclick="toggleCodeVisibility('code-batalha')">Batalha Naval</h2>
+    <p>Código em Linguagem Assembly do jogo Batalha Naval</p>
+    <pre id="code-batalha" class="code-hidden">
+        <a href="BATALHA NAVAL.asm" target="_blank">Clique aqui para acessar o código em Assembly do Batalha Naval</a>
+    </pre>
+</div>
 
-        <!-- Jogo Snake -->
-        <div class="game">
-            <h2>Snake Game</h2>
-            <div class="game-container">
-                <img src="snake.jpeg" alt="Imagem do jogo Snake" width="200" height="200">
-                <div class="game-buttons">
-                    <button onclick="iniciarSnake()">Iniciar</button>
-                </div>
-            </div>
-        </div>
+<!-- Jogo Snake -->
+<div class="game">
+    <h2 onclick="toggleCodeVisibility('code-snake')">Snake Game</h2>
+    <p>Código em Linguagem Assembly do jogo Snake</p>
+    <pre id="code-snake" class="code-hidden">
+        <a href="path/to/snake-game.asm" target="_blank">Clique aqui para acessar o código em Assembly do Snake Game</a>
+    </pre>
+</div>
 
-        <!-- Jogo Pac-Man-->
-        <div class="game">
-            <h2>Pac-Man</h2>
-            <br/>
-            <br/>   
-            <div class="game-container">
-                <img src="pacman.jpg" alt="Imagem do jogo Pac-Man" width="200" height="200">
-                <div class="game-buttons">
-                    <button onclick="iniciarCampoMinado()">Iniciar</button>
-                </div>
-            </div>
-        </div>
+<!-- Jogo PacMan -->
+<div class="game">
+    <h2 onclick="toggleCodeVisibility('code-pacman')">Pac-Man</h2>
+    <p>Código em Linguagem Assembly do jogo Pac-Man.</p>
+    <pre id="code-pacman" class="code-hidden">
+        <a href="PAC MAN.asm" target="_blank">Clique aqui para acessar o código em Assembly do Pac-Man</a>
+    </pre>
+</div>
+
     </div>
 
     <script>
@@ -97,7 +97,18 @@
             const menu = document.getElementById('menu');
             menu.classList.toggle('open');
         }
+
+        // Função para alternar a visibilidade do código
+        function toggleCodeVisibility(codeId) {
+            const codeBlock = document.getElementById(codeId);
+            if (codeBlock.style.display === "none" || codeBlock.style.display === "") {
+                codeBlock.style.display = "block";  
+            } else {
+                codeBlock.style.display = "none";   
+            }
+        }
     </script>
+
     <footer>
         <p>&copy; 2024 Projeto Web - PUC CAMPINAS</p>
     </footer>
