@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="cpu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <button class="menu-button" onclick="toggleMenu()">&#9776;</button>
+
+    <!-- Menu de navegação -->
+    <nav class="menu" id="menu">
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <ul>
+            <li class="item-menu">
+                <a href="sobre.html">
+                    <span class="icone"><i class="bi bi-folder"></i></span>
+                    <span class="txt-link">Sobre o Projeto</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="cpu.html">
+                    <span class="icone"><i class="bi bi-cpu"></i></span>
+                    <span class="txt-link">CPU hipotetica</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="jogos.html">
+                    <span class="icone"><i class="bi bi-joystick"></i></span>
+                    <span class="txt-link">Jogos</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="monitoria.html">
+                    <span class="icone"><i class="bi bi-person-raised-hand"></i></span>
+                    <span class="txt-link">Monitorias</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icone"><i class="bi bi-cloud-arrow-up-fill"></i></span>
+                    <span class="txt-link">Código em Assembly</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="imagem">
+        <img src="imagem cpu.jpg" usemap="#mapa">
+    </div> 
+
+    <div class="container">
+        <div class="text-box top-1" id="Text 1" onclick="mostrarTexto('A memória principal reúne todas as memórias que o processador consegue acessar para realizar o endereçamento e armazenar as instruções e dados que são executados pela cpu')">MP</div>
+        <div class="text-box top-2" id="Text 2" onclick="mostrarTexto('O PC é um registrador na CPU que controla a sequência de execução das instruções de um programa. Ele aponta para o endereço da próxima instrução a ser executada e é atualizado após cada instrução. Isso garante que a CPU siga a ordem correta de execução, inclusive em casos de saltos ou loops')">PC</div>
+        <div class="text-box top-3" id="Text 3" onclick="mostrarTexto('O RI pode ser um registrador de índice, que facilita o acesso a dados em tabelas ou sequências, ou um registrador de instrução, que armazena a instrução atual a ser executada para que possa sex executada de forma eficiente')">RI</div>
+        <div class="text-box top-4" id="Text 4" onclick="mostrarTexto('O SP é um registrador que aponta para o topo da pilha de memória, usado para gerenciar dados temporários e durante chamadas de funções e interrupções, o SP ajusta-se para armazenar e recuperar essas informações, garantindo que o programa continue executando corretamente')">SP</div>
+        
+        <div class="text-box right-1" id="Text 5" onclick="mostrarTexto('A função do registrador 0 pode variar dependendo da cpu, mas em geral ele é utilizado para armazenar o valor 0, que é utilizado em operações matemáticas ou controle de fluxo, mas também pode ser utilizado como um registrador qualquer')">R0</div>
+        <div class="text-box right-2" id="Text 6" onclick="mostrarTexto('O papel exato de um registrador 1 depende muito da cpu trabalhada, mas é normalmente utilizado como um armazenamento temporário geral, guardando resultados de operações, cálculos ou valores gerais')">R1</div>
+        <div class="text-box right-3" id="Text 7" onclick="mostrarTexto('O registrador 2 é normalmente utilizado para guardar informações temporárias durante execução de operações, mas também pode armazenar operandos ou resultados para auxiliar em operações de controle')">R2</div>
+        <div class="text-box right-4" id="Text 8" onclick="mostrarTexto('O registrador 3 normalmente tem a função de um registrador genérico, armazenando informações para execução de instruções, mas dependendo da cpu pode ter funções especializadas como contendo valores intermediários')">R3</div>
+        
+        <div class="text-box bottom-1" id="Text 9" onclick="mostrarTexto('O registrador Y é um tipo de registrador usado em algumas arquiteturas de processadores, geralmente para armazenar dados temporários ou como parte de operações, como contagem ou cálculos de deslocamento de memória. Seu uso específico varia dependendo da arquitetura do processador')">Y</div>
+        <div class="text-box bottom-2" id="Text 10" onclick="mostrarTexto('A unidade lógica aritmética é responsável por realizar as operações matemáticas e lógicas em uma cpu, processando as informações nos registradores de acordo com as instruções dadas')">ULA</div>
+        <div class="text-box bottom-3" id="Text 11" onclick="mostrarTexto('A unidade de controle é responsável por interpretar e coordenar a execução das instruções do processador, ordenando as operações e o fluxo de dados na ordem correta para que o sistema funcione de forma eficiente')">UC</div>
+        <div class="text-box bottom-4" id="Text 12" onclick="mostrarTexto('A unidade de entrada e saída gerencia a troca de dados entre o processador e dispositivos externos à cpu como o mouse, gerenciando interrupções e controlando os buffers de memória, sendo responsável pela interação com o meio externo')">E/S</div>
+        
+        <div class="text-box left-1" id="Text 13" onclick="mostrarTexto('O bus de endereço, tembém chamado de barramento de endereço é usado para especificar um endereço físico. Quando um processador ou dispositivo habilitado para DMA precisa ler ou escrever em um local de memória, ele especifica esse local de memória no barramento de endereço')">BUS DE ENDEREÇO</div>
+        <div class="text-box left-2" id="Text 14" onclick="mostrarTexto('O bus de controle, também chamado de barramento de controle, controla as operações entre a cpu, memória e outros periféricos enviando sinais para executar as operações e sincronizando elas, fazendo com que sejam feitas no momento correto e eficientemente')">BUS DE CONTROLE</div>
+        <div class="text-box left-3" id="Text 15" onclick="mostrarTexto('O bus de dados, também chamado de barramento de dados, transporta informações entre a cpu, memória e outros periféricos, portanto é o responsável pela comunicação entre os componentes do sistema de forma eficiente e rápida')">BUS DE DADOS</div>
+        <div class="text-box left-4" id="Text 16" onclick="mostrarTexto('O registrador Z em uma CPU geralmente se refere ao Zero Flag, que é um bit no registrador de status. Ele fica com o valor 1 quando o resultado de uma operação aritmética ou lógica é zero. Isso é usado para controlar o fluxo do programa')">Z</div>
+    </div>
+
+    <!-- Caixinha de texto -->
+    <div id="caixinhaTexto">
+        <p id="textoCaixinha"></p>
+        <button onclick="fecharCaixinha()">Fechar</button>
+    </div>
+
+    <script>
+        // Função para alternar o menu
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('open');
+        }
+
+        // Função para mostrar a caixinha de texto com o conteúdo específico
+        function mostrarTexto(texto) {
+            const caixinha = document.getElementById('caixinhaTexto');
+            const textoCaixinha = document.getElementById('textoCaixinha');
+            textoCaixinha.textContent = texto;  // Define o texto da caixinha
+            caixinha.style.display = 'block';   // Exibe a caixinha
+        }
+
+        // Função para fechar a caixinha de texto
+        function fecharCaixinha() {
+            const caixinha = document.getElementById('caixinhaTexto');
+            caixinha.style.display = 'none';    // Esconde a caixinha
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2024 Projeto Web - PUC CAMPINAS</p>
+    </footer>
+</body>
+</html>
+

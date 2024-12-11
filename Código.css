@@ -1,0 +1,216 @@
+/* Reset básico */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #000; 
+    color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    color: #3e9cea;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Container e conteúdo principal */
+.container {
+    padding: 40px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 30px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+h2, h3 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.monitor {
+    background-color: #333;
+    border: 2px solid #3e9cea;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.monitor:hover {
+    background-color: #3e9cea;
+    color: #000;
+}
+
+.monitor h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.monitor ul {
+    list-style-type: none;
+    margin: 20px 0;
+}
+
+.monitor ul li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    padding: 8px;
+    border: 2px solid #3e9cea;
+    border-radius: 5px;
+}
+
+/* Rodapé */
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Efeitos de transição */
+.container, header {
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Estilos do menu de navegação */
+nav.menu {
+    background: #111;
+    padding: 15px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-250px);
+}
+
+nav.menu.open {
+    transform: translateX(0);
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.3rem;
+    margin: 10px 0;
+    padding: 8px;
+    border: 2px solid #3e9cea;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+ul li:hover {
+    background-color: #3e9cea;
+    color: #000;
+}
+
+.item-menu {
+    margin: 10px 0;
+}
+
+.item-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.item-menu .icone {
+    margin-right: 10px;
+}
+
+.item-menu a:hover {
+    color: #3e9cea;
+    color: #000;
+}
+
+/* Estilos do botão de menu */
+.menu-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: #111;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.menu-button:hover {
+    background: #3e9cea;
+}
+
+/* Estilo para o conteúdo */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .menu-button {
+        display: block;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+}
+
+/* Novo código para mostrar/ocultar o código */
+.code-hidden {
+    display: none;
+}
+
+/* Estilos adicionais para os títulos dos jogos */
+.game h2 {
+    cursor: pointer;
+    color: #007bff;
+}
+
+.game h2:hover {
+    text-decoration: underline;
+}
