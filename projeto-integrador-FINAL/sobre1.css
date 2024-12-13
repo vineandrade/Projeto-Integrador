@@ -1,0 +1,128 @@
+
+body {
+    font-family: 'Press Start 2P', sans-serif;
+    background-color: #1a1a1a;
+    color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+h1, h2 {
+    text-align: center;
+    color: #3e9cea;
+    margin: 20px 0;
+}
+header {
+    background-color: #333;
+    padding: 20px 0;
+    border-bottom: 2px solid #3e9cea;
+}
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+footer {
+    background-color: #333;
+    color: #888;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-top: 2px solid #3e9cea;
+}
+.menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #222;
+    overflow-y: auto;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+.menu.open {
+    left: 0;
+}
+.menu-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    background-color: #3e9cea;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1001;
+}
+.menu-button:hover {
+    background-color: #2d7bbd;
+}
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu li {
+    border-bottom: 1px solid #444;
+}
+.menu a {
+    display: block;
+    color: #f2f2f2;
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: background 0.3s ease;
+}
+.menu a:hover {
+    background-color: #3e9cea;
+    color: #000;
+}
+.icone {
+    margin-right: 10px;
+}
+.game {
+    margin: 20px 0;
+    padding: 15px;
+    background: #111;
+    border: 2px solid #3e9cea;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+.game:hover {
+    background-color: #3e9cea;
+    color: #000;
+}
+pre {
+    display: none;
+    background: #222;
+    padding: 10px;
+    border: 1px solid #3e9cea;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+pre a {
+    color: #3e9cea;
+    text-decoration: none;
+}
+pre a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .menu {
+        width: 200px;
+    }
+
+    .menu-button {
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    h1, h2 {
+        font-size: 18px;
+    }
+}

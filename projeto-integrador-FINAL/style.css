@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+  font-family: 'Press Start 2P', cursive;
+  position: relative;
+}
+#backButton {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px 20px;
+  font-size: 12px;
+  color: #fff;
+  background-color: #3e9cea;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Press Start 2P', cursive;
+}
+#backButton:hover {
+  background-color: #0053e6;
+}
+#gameArea {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Press Start 2P', cursive;
+}
+canvas {
+  border: 5px solid #00f;
+  background-color: #000;
+  font-family: 'Press Start 2P', cursive;
+}

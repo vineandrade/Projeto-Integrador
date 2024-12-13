@@ -1,0 +1,33 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+  }
+  
+  #gameContainer {
+    position: relative;
+  }
+  #backButton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #3e9cea;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P', cursive;
+  }
+  
+  #backButton:hover {
+    background-color: #0053e6;
+  }

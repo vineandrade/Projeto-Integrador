@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+#game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(10, 40px);
+    gap: 5px;
+}
+
+button {
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #3e9cea;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0053e6;
+}
+
+button:active {
+    background-color: #0053e6;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.cell.revealed {
+    background-color: #95a5a6;
+    cursor: default;
+}
+
+.cell.mine {
+    background-color: #e74c3c;
+}
+
+.cell.flagged {
+    background-color: #f39c12;
+}
+
+.cell:hover {
+    background-color: #bdc3c7;
+}
+#backButton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #3e9cea;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P', cursive;
+  }
+  
+  #backButton:hover {
+    background-color: #0053e6;
+  }
